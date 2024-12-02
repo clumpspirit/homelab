@@ -31,3 +31,9 @@ spec:
   values:
     grafana:
       adminPassword: edo
+      ingress:
+        enabled: true
+        ingressClassName: traefik
+        hosts:
+          - graf.dzilic.net
+        tls: []
