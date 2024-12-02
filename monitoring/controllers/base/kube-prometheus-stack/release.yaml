@@ -38,5 +38,5 @@ spec:
           - graf.dzilic.net
         tls:
           - secretName: grafana-tls-secret
-          hosts:
-            - graf.dzilic.net
+            hosts:
+              - graf.dzilic.net
