@@ -36,4 +36,7 @@ spec:
         ingressClassName: traefik
         hosts:
           - graf.dzilic.net
-        tls: []
+        tls:
+          - secretName: grafana-tls-secret
+          hosts:
+            - graf.dzilic.net
