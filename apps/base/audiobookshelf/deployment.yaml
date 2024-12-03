@@ -19,3 +19,16 @@ spec:
           envFrom:
             - configMapRef:
                 name: audio-configmap
+          volumeMounts:
+            - mountPath: /config
+              name: audiobookshelf-data
+            - mountPath: /metadata
+              name: audiobookshelf-data
+            - mountPath: /audiobooks
+              name: audiobookshelf-data
+            - mountPath: /podcasts
+              name: audiobookshelf-data
+      volumes:
+        - name: audiobookshelf-data
+          persistentVolumeClaim:
+            claimName: audiobookshelf-data-pvc
