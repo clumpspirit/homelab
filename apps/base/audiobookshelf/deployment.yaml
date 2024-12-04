@@ -14,6 +14,7 @@ spec:
         app: audiobookshelf
     spec:
       securityContext:
+        fsGroup: 1000 # node group ID
         runAsUser: 1000 # node user ID
         runAsGroup: 1000 # node group ID
       containers:
@@ -32,6 +33,15 @@ spec:
             - mountPath: /podcasts
               name: audiobookshelf-data
       volumes:
-        - name: audiobookshelf-data
+        - name: audiobookshelf-metadata
           persistentVolumeClaim:
-            claimName: audiobookshelf-data-pvc
+            claimName: audiobookshelf-metadata
+        - name: audiobookshelf-audiobooks
+          persistentVolumeClaim:
+            claimName: audiobookshelf-audiobooks
+        - name: audiobookshelf-config
+          persistentVolumeClaim:
+            claimName: audiobookshelf-config
+        - name: audiobookshelf-podcasts
+          persistentVolumeClaim:
+            claimName: audiobookshelf-podcasts
