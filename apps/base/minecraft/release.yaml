@@ -33,3 +33,8 @@ spec:
       difficulty: hard
       whitelist: OatmealRecipes, chosenpotato
       ops: OatmealRecipes, chosenpotato
+      serviceType: LoadBalancer
+    persistence:
+      dataDir:
+        enabled: true
+        Size: 2Gi
