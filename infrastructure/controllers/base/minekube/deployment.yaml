@@ -21,7 +21,7 @@ spec:
         - containerPort: 25565
           name: minecraft
         volumeMounts:
-        - mountPath: /gate/config.yml
+        - mountPath: / #/gate/config.yml
           name: config
           subPath: config.yml
       volumes:
