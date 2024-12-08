@@ -19,7 +19,7 @@ spec:
         runAsGroup: 1000 # node group ID
       containers:
         - name: audiobookshelf
-          image: advplyr/audiobookshelf:2.17.3
+          image: advplyr/audiobookshelf:2.17.5
           envFrom:
             - configMapRef:
                 name: audio-configmap
