@@ -33,6 +33,17 @@ spec:
       difficulty: hard
       whitelist: OatmealRecipes, chosenpotato
       ops: OatmealRecipes, chosenpotato
+      type: "PAPER"
+    extraVolumes:
+      - volumeMounts:
+          - name: spigot
+            mountPath: /data/spigot.yml
+            readOnly: false
+            subPath: spigot.yml
+        volumes:
+          - name: spigot
+            configMap:
+              name: spigot-config
     persistence:
       dataDir:
         enabled: true
