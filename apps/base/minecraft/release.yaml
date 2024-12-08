@@ -34,6 +34,7 @@ spec:
       whitelist: OatmealRecipes, chosenpotato
       ops: OatmealRecipes, chosenpotato
       type: "PAPER"
+      onlineMode: false
     extraVolumes:
       - volumeMounts:
           - name: spigot
