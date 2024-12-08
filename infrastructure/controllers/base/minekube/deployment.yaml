@@ -17,13 +17,13 @@ spec:
       containers:
       - image: ghcr.io/minekube/gate:latest
         name: gate
-        command: ["./gate"]
-        args: ["-c /gate-files/config.yml"]
+        #command: ["./gate"]
+        #args: ["-c /gate-files/config.yml"]
         ports:
         - containerPort: 25566
           name: minecraft
         volumeMounts:
-        - mountPath: /gate-files/config.yml
+        - mountPath: ./config.yml
           name: config
           subPath: config.yml
       volumes:
