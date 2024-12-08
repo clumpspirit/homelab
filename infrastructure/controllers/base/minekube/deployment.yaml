@@ -28,6 +28,10 @@ spec:
           name: token
           subPath: connect.json
           readOnly: false
+        securityContext:
+          runAsUser: 1000
+          runAsGroup: 1000
+          fsGroup: 1000
       volumes:
       - configMap:
           name: gate-config
