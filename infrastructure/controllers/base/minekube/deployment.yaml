@@ -26,13 +26,13 @@ spec:
         - mountPath: ./config.yml
           name: config
           subPath: config.yml
-          mountPath: ./token.json
+        - mountPath: ./token.json
           name: token
           subPath: token.json
       volumes:
       - configMap:
           name: gate-config
         name: config
-        secret:
+      - secret:
           secretName: connector-token
         name: token
