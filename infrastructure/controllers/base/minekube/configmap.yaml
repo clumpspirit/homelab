@@ -12,7 +12,7 @@ data:
         - server-0
     connect:
       enabled: true
-      #name: clumpspirit
+      name: clumpspirit
 kind: ConfigMap
 metadata:
   labels:
