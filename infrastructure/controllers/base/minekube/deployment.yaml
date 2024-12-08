@@ -28,14 +28,11 @@ spec:
           name: token
           subPath: connect.json
           readOnly: false
-        securityContext:
-          runAsUser: 0
-          runAsGroup: 0
-          fsGroup: 1000
       volumes:
       - configMap:
           name: gate-config
         name: config
       - secret:
           secretName: connector-token
+          defaultMode: 0777
         name: token
