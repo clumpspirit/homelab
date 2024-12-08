@@ -26,9 +26,9 @@ spec:
         - mountPath: ./config.yml
           name: config
           subPath: config.yml
-        - mountPath: ./token.json
+        - mountPath: ./connect.json
           name: token
-          subPath: token.json
+          subPath: connect.json
       volumes:
       - configMap:
           name: gate-config
