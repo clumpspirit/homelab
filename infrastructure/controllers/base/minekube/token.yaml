@@ -4,7 +4,7 @@ data:
 kind: Secret
 metadata:
     creationTimestamp: null
-    name: tunnel-credentials
+    name: connector-token
 sops:
     kms: []
     gcp_kms: []
