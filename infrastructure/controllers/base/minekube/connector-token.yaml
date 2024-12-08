@@ -1,0 +1,27 @@
+apiVersion: v1
+data:
+    connect.json: ENC[AES256_GCM,data:rDta/5fT2/LtU7DZ6sBmuxRwy5f1AIBpB60n8hS1DQtYaqkn0t0qc3cLaGMR8+wW3zu4vA==,iv:1pe+oWD7yJnk1R0XJRPoeAOXRMdiYcyHbI61PWv3cDs=,tag:N5u6/QqwfXQM9BHmb1t1Qw==,type:str]
+kind: Secret
+metadata:
+    creationTimestamp: null
+    name: connector-token
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1m74ukye349p80duvy953d7vrpzvd60jx0vr49ew5df2rg2aj4u2sjpuv25
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBsYjY3L2wzdVZOOUNDQkg0
+            dGRLdGdSdm9KMnF2NEdMTWNGVXBCd01jT1ZBCk9zc1YwMUUrZXR0ZVBUZG9SUGNM
+            eXNMV21TSU9XelFSNzQ3MFVESUpveFkKLS0tIGEyUTgrQ0FMTG4vMjRtNWU0R2hB
+            RlppWDF0bzVFUlU5Rk5adlkzTnVzUXcKZOYAZ+TgdtK6TXYepeUZWkqQHwBkfmsF
+            lciCD88bQ63AUj+dNjrtNdqG5Q440AWNpozU6oNFAZLdPiS62QHl+A==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2024-12-08T16:59:46Z"
+    mac: ENC[AES256_GCM,data:D2/rIA0jqmm6RaRmhcASJ91Gk84s5z6L1FeXOAsygLkzKYm2r+q2dK+47lBiz7Ll6Dvqp0WK6AH/xB2bLZ5K/cjY2L/306TAxrmQ+g6AFTxCd0PEdOyubAP8G3nKvOIUfMXqjUBHeiMg9WfmhWIYZzzuZWbKpkVuL+wSOmsH9q8=,iv:HBL2Ks6UgqGzOLg32cbwerP5hBV1obQIFJoer7vH3ds=,tag:/egeTdbJkrreu1k6ewzIDQ==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.9.1
