@@ -26,6 +26,7 @@ spec:
           subPath: config.yml
         - mountPath: ./connect.json
           name: token
+          subPath: connect.json
           readOnly: false
       volumes:
       - configMap:
