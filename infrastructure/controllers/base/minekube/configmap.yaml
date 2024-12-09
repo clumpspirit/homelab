@@ -12,7 +12,7 @@ data:
         - server-0
     connect:
       enabled: true
-      name: coffee
+      #name: coffee
 kind: ConfigMap
 metadata:
   labels:

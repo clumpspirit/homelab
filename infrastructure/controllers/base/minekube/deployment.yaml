@@ -24,10 +24,10 @@ spec:
         - mountPath: ./config.yml
           name: config
           subPath: config.yml
-        - mountPath: ./connect.json
-          name: token
-          subPath: connect.json
-          readOnly: false
+        #- mountPath: ./connect.json
+        #  name: token
+        #  subPath: connect.json
+        #  readOnly: false
       volumes:
       - configMap:
           name: gate-config
