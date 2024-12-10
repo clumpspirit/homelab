@@ -12,7 +12,7 @@ data:
         - server-0
       status:
         motd: |
-          {"text":"boulders","bold":true,"color":"gray"},{"text":" &","bold":true,"color":"white"},{"text":" c","bold":true,"color":"#38220F"},{"text":"o","bold":true,"color":"#634832"},{"text":"f","bold":true,"color":"#967259"},{"text":"f","bold":true,"color":"#DBC1AC"},{"text":"e","bold":true,"color":"#ECE0D1"},{"text":"e","bold":true,"color":"#DBC1AC"},{"text":" \u2615","bold":true,"color":"#967259"}
+          [{"text":"boulders","bold":true,"color":"gray"},{"text":" &","bold":true,"color":"white"},{"text":" c","bold":true,"color":"#38220F"},{"text":"o","bold":true,"color":"#634832"},{"text":"f","bold":true,"color":"#967259"},{"text":"f","bold":true,"color":"#DBC1AC"},{"text":"e","bold":true,"color":"#ECE0D1"},{"text":"e","bold":true,"color":"#DBC1AC"},{"text":" \u2615","bold":true,"color":"#967259"}]
         onlineModeKickExistingPlayers: true
     connect:
       enabled: true
