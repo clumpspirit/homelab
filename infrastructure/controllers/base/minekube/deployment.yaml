@@ -17,6 +17,9 @@ spec:
       containers:
       - image: ghcr.io/minekube/gate:latest
         name: gate
+        envFrom:
+          - secretRef:
+              name: connector-token
         ports:
         - containerPort: 25566
           name: minecraft
@@ -24,14 +27,7 @@ spec:
         - mountPath: ./config.yml
           name: config
           subPath: config.yml
-        #- mountPath: ./connect.json
-        #  name: token
-        #  subPath: connect.json
-        #  readOnly: false
       volumes:
       - configMap:
           name: gate-config
         name: config
-      - secret:
-          secretName: connector-token
-        name: token
