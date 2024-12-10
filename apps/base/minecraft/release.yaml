@@ -26,8 +26,8 @@ spec:
   values:
     resources:
       requests:
-        memory: 2048Mi
-        cpu: 1000m
+        memory: 8192Mi
+        cpu: 2000m
     minecraftServer:
       eula: "TRUE"
       difficulty: hard
@@ -36,6 +36,7 @@ spec:
       type: "PAPER"
       onlineMode: false
       overrideServerProperties: true
+      memory: 8192M
     extraVolumes:
       - volumeMounts:
           - name: spigot

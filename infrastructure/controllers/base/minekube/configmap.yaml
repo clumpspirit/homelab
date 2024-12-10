@@ -10,6 +10,9 @@ data:
         server-0: 10.43.198.95:25565
       try:
         - server-0
+      status:
+        motd: |
+          \u00a7r                         \u00a7b\u2756 \u00a76\u00a7lCoffee\u00a75\u00a7lMC\u00a7b \u2756\u00a7r\n                         \u00a76\u00a7l Climbing Nation
     connect:
       enabled: true
       name: coffee
