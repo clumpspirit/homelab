@@ -12,7 +12,7 @@ data:
         - server-0
       status:
         motd: |
-          \u00a7r                         \u00a7b\u2756 \u00a76\u00a7lCoffee\u00a75\u00a7lMC\u00a7b \u2756\u00a7r\n                         \u00a76\u00a7l Climbing Nation
+          '{"text":"coffee \u2615","color":"#6F4E37"}'
     connect:
       enabled: true
       name: coffee
