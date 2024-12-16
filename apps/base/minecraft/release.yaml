@@ -31,8 +31,8 @@ spec:
     minecraftServer:
       eula: "TRUE"
       difficulty: hard
-      whitelist: OatmealRecipes, RogueAccessPoint
-      ops: OatmealRecipes, RogueAccessPoint
+      whitelist: OatmealRecipes, RogueAccessPoint, ajka_
+      ops: OatmealRecipes, RogueAccessPoint, ajka_
       type: "PAPER"
       onlineMode: false
       overrideServerProperties: true
