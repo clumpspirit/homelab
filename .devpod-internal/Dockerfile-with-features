@@ -1,4 +1,4 @@
-# syntax=docker.io/docker/dockerfile:1.4
+# syntax=docker.io/docker/dockerfile:1.12
 ARG _DEV_CONTAINERS_BASE_IMAGE=placeholder
 
 
