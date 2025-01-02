@@ -3,7 +3,7 @@
   "features": {
     "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {}
     },
-  "onCreateCommand": ["sudo chsh -s /usr/bin/zsh $USER", "direnv allow"],
+  "onCreateCommand": "sudo chsh -s /usr/bin/zsh $USER", 
   "settings": {
     "terminal.integrated.defaultProfile.linux": "zsh",
     "terminal.integrated.profiles.linux": {
