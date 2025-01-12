@@ -26,7 +26,7 @@ Since my entire setup is open-source, I keep a [SOPS age](https://github.com/get
 
 ## Repo Structure
 
-Decided to fully commit to Flux CD and their best practices. I currently only have a single cluster setup, so I'm not utilizing a production directory (yet).
+Decided to fully commit to Flux CD and their best practices. Once I get more hardware, I'll be able to scale at a moment's notice thanks to this structure.
 
 Set up the repo according to [this guide](https://fluxcd.io/flux/guides/repository-structure/).
 
