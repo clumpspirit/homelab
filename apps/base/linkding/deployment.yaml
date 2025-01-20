@@ -12,23 +12,37 @@ spec:
       labels:
         app: linkding
     spec:
+
       securityContext:
         fsGroup: 33 # www-data group ID
         runAsUser: 33 # www-data user ID
         runAsGroup: 33 # www-data group ID
+
       containers:
         - name: linkding
           image: sissbruecker/linkding:1.36.0
+
+          # this env is managed by CloudNativePG
+          env:
+          - name: LD_DB_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: linkding-database-cluster-app
+                key: password
+
           envFrom:
           - secretRef:
               name: linkding-secret
           - configMapRef:
               name: linkding-configmap
+
           ports:
             - containerPort: 9090
+
           volumeMounts:
             - mountPath: /etc/linkding/data
               name: linkding-data
+
           securityContext:
             allowPrivilegeEscalation: false
       volumes:

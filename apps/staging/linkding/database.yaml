@@ -11,6 +11,11 @@ spec:
     labels:
       app: linkding-database
 
+
+  bootstrap:
+    initdb:
+      database: linkding
+
   monitoring:
     enablePodMonitor: true
 
