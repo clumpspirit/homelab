@@ -13,7 +13,7 @@ spec:
 
   backup:
     barmanObjectStore:
-      destinationPath: https://hl-database-clump.s3.us-west-1.amazonaws.com/linkding/
+      destinationPath: s3://hl-database-clump/linkding/
       s3Credentials:
         accessKeyId:
           name: aws-creds
