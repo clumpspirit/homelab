@@ -11,6 +11,21 @@ spec:
     labels:
       app: linkding-database
 
+  backup:
+    barmanObjectStore:
+      destinationPath: https://hl-database-clump.s3.us-west-1.amazonaws.com/linkding/
+      s3Credentials:
+        accessKeyId:
+          name: aws-creds
+          key: ACCESS_KEY_ID
+        secretAccessKey:
+          name: aws-creds
+          key: ACCESS_SECRET_KEY
+      wal:
+        compression: gzip
+      data:
+        compression: gzip
+    retentionPolicy: 14d
 
   bootstrap:
     initdb:
