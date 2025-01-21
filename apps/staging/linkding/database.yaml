@@ -20,7 +20,7 @@ spec:
   externalClusters:
     - name: clusterBackup
       barmanObjectStore:
-        destinationPath: s3://hl-database-clump/linkding/linkding-database-cluster/
+        destinationPath: "s3://hl-database-clump/linkding/linkding-database-cluster/"
         s3Credentials:
           accessKeyId:
             name: aws-creds
