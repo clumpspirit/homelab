@@ -11,6 +11,24 @@ spec:
     labels:
       app: linkding-database
 
+  bootstrap:
+    recovery:
+      source: clusterBackup
+      database: linkding
+      owner: linkding
+
+  externalClusters:
+    - name: clusterBackup
+      barmanObjectStore:
+        destinationPath: s3://hl-database-clump/linkding/
+        s3Credentials:
+          accessKeyId:
+            name: aws-creds
+            key: ACCESS_KEY_ID
+          secretAccessKey:
+            name: aws-creds
+            key: ACCESS_SECRET_KEY
+
   backup:
     barmanObjectStore:
       destinationPath: s3://hl-database-clump/linkding/
@@ -26,10 +44,6 @@ spec:
       data:
         compression: gzip
     retentionPolicy: 14d
-
-  bootstrap:
-    initdb:
-      database: linkding
 
   monitoring:
     enablePodMonitor: true
