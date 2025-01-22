@@ -13,14 +13,15 @@ spec:
 
   bootstrap:
     recovery:
-      source: clusterBackup
+      source: linkding-database-cluster
       database: linkding
       owner: linkding
 
   externalClusters:
-    - name: clusterBackup
+    - name: linkding-database-cluster
       barmanObjectStore:
-        destinationPath: "s3://hl-database-clump/linkding/linkding-database-cluster/"
+        destinationPath: "s3://hl-database-clump/linkding/"
+        serverName: linkding-database-cluster
         s3Credentials:
           accessKeyId:
             name: aws-creds
