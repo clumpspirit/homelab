@@ -31,6 +31,13 @@ spec:
       valuesKey: admin
       targetPath: grafana.adminPassword
   values:
+
+    prometheus:
+      prometheusSpec:
+        # allows servicemonitor and podmonitor discovery across all namespaces
+        serviceMonitorSelectorNilUsesHelmValues: false
+        podMonitorSelectorNilUsesHelmValues: false
+
     grafana:
       ingress:
         enabled: true
