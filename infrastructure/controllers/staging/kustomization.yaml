@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - renovate
   - cloudnative-pg
+  - exernal-secrets
