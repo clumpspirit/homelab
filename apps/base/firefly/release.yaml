@@ -21,5 +21,3 @@ spec:
   driftDetection:
     mode: enabled
   values:
-    persistence:
-      enabled: false
