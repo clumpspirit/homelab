@@ -1,7 +1,7 @@
 apiVersion: postgresql.cnpg.io/v1
 kind: Cluster
 metadata:
-  name: firefly-iii-initdb
+  name: firefly-iii-database-cluster
 spec:
   description: Postgres database cluster for firefly-iii
   imageName: ghcr.io/cloudnative-pg/postgresql:16.6-30-bookworm
@@ -12,22 +12,23 @@ spec:
       app: firefly-iii-database
 
   bootstrap:
-    initdb:
+    recovery:
+      source: clusterBackup
       database: firefly-iii
       owner: firefly
 
-  # externalClusters:
-  #   - name: clusterBackup
-  #     barmanObjectStore:
-  #       destinationPath: "s3://hl-database-clump/linkding/"
-  #       serverName: linkding-backup
-  #       s3Credentials:
-  #         accessKeyId:
-  #           name: aws-creds
-  #           key: ACCESS_KEY_ID
-  #         secretAccessKey:
-  #           name: aws-creds
-  #           key: ACCESS_SECRET_KEY
+  externalClusters:
+    - name: clusterBackup
+      barmanObjectStore:
+        destinationPath: "s3://hl-database-clump/firefly-iii/"
+        serverName: firefly-iii-initdb
+        s3Credentials:
+          accessKeyId:
+            name: aws-creds
+            key: ACCESS_KEY_ID
+          secretAccessKey:
+            name: aws-creds
+            key: ACCESS_SECRET_KEY
 
   backup:
     barmanObjectStore:

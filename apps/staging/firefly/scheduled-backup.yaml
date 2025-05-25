@@ -7,4 +7,4 @@ spec:
   schedule: "0 0 3 * * *"
   backupOwnerReference: cluster
   cluster:
-    name: firefly-iii-initdb
+    name: firefly-iii-database-cluster

@@ -25,23 +25,23 @@ spec:
       envValueFrom:
         DB_HOST:
           secretKeyRef:
-            name: firefly-iii-initdb-app
+            name: firefly-iii-database-cluster-app
             key: host
         DB_PORT:
           secretKeyRef:
-            name: firefly-iii-initdb-app
+            name: firefly-iii-database-cluster-app
             key: port
         DB_DATABASE:
           secretKeyRef:
-            name: firefly-iii-initdb-app
+            name: firefly-iii-database-cluster-app
             key: dbname
         DB_USERNAME:
           secretKeyRef:
-            name: firefly-iii-initdb-app
+            name: firefly-iii-database-cluster-app
             key: username
         DB_PASSWORD:
           secretKeyRef:
-            name: firefly-iii-initdb-app
+            name: firefly-iii-database-cluster-app
             key: password
         TZ:
           configMapKeyRef:
