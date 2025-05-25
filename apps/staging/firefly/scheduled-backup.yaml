@@ -1,0 +1,10 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: ScheduledBackup
+metadata:
+  name: firefly-iii-database-cluster
+spec:
+  immediate: true
+  schedule: "0 0 3 * * *"
+  backupOwnerReference: cluster
+  cluster:
+    name: firefly-iii-initdb
