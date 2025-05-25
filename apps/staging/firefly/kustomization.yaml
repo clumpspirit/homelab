@@ -7,3 +7,5 @@ resources:
   - database-secret.yaml
   - configmap.yaml
   - scheduled-backup.yaml
+  - cloudflare.yaml
+  - cloudflare-secret.yaml
