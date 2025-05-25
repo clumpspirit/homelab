@@ -21,3 +21,33 @@ spec:
   driftDetection:
     mode: enabled
   values:
+    config:
+      envValueFrom:
+        DB_HOST:
+          secretKeyRef:
+            name: firefly-iii-initdb-app
+            key: host
+        DB_PORT:
+          secretKeyRef:
+            name: firefly-iii-initdb-app
+            key: port
+        DB_DATABASE:
+          secretKeyRef:
+            name: firefly-iii-initdb-app
+            key: dbname
+        DB_USERNAME:
+          secretKeyRef:
+            name: firefly-iii-initdb-app
+            key: username
+        DB_PASSWORD:
+          secretKeyRef:
+            name: firefly-iii-initdb-app
+            key: password
+        TZ:
+          configMapKeyRef:
+            name: firefly-iii-configmap
+            key: TZ
+        DB_CONNECTION:
+          configMapKeyRef:
+            name: firefly-iii-configmap
+            key: DB_CONNECTION
