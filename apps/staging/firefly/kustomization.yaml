@@ -3,3 +3,5 @@ kind: Kustomization
 namespace: firefly
 resources:
   - ../../base/firefly
+  - database.yaml
+  - database-secret.yaml
