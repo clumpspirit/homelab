@@ -23,7 +23,6 @@ spec:
   values:
     securityContext:
       allowPrivilegeEscalation: false
-      readOnlyRootFilesystem: true
       runAsNonRoot: true
       runAsUser: 33
       runAsGroup: 33
