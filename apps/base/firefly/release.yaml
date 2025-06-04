@@ -21,6 +21,13 @@ spec:
   driftDetection:
     mode: enabled
   values:
+    securityContext:
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+      runAsNonRoot: true
+      runAsUser: 33
+      runAsGroup: 33
+      fsGroup: 33
     config:
       envValueFrom:
         DB_HOST:
