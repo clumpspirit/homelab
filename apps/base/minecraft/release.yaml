@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: minecraft
-      version: "4.23.2"
+      version: "4.26.3"
 
       # version: "58.x"
 
@@ -31,8 +31,8 @@ spec:
     minecraftServer:
       eula: "TRUE"
       difficulty: hard
-      whitelist: OatmealRecipes, RogueAccessPoint, ajka_, flooflyy
-      ops: OatmealRecipes, RogueAccessPoint, ajka_, flooflyy
+      whitelist: OatmealRecipes, RogueAccessPoint, ajka_, flooflyy, PegProduct49
+      ops: OatmealRecipes, RogueAccessPoint, ajka_, flooflyy, PegProduct49
       type: "PAPER"
       onlineMode: false
       overrideServerProperties: true
