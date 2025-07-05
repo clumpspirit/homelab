@@ -26,7 +26,7 @@ spec:
   values:
     resources:
       requests:
-        memory: 8192Mi
+        memory: 16384Mi
         cpu: 2000m
     minecraftServer:
       eula: "TRUE"
@@ -37,7 +37,7 @@ spec:
       type: "PAPER"
       onlineMode: false
       overrideServerProperties: true
-      memory: 8192M
+      memory: 16384M
     extraVolumes:
       - volumeMounts:
           - name: spigot
