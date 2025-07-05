@@ -27,7 +27,7 @@ spec:
     resources:
       requests:
         memory: 16384Mi
-        cpu: 2000m
+        cpu: 4000m
     minecraftServer:
       eula: "TRUE"
       version: "1.21.6"
