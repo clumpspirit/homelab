@@ -20,7 +20,7 @@ spec:
 
       containers:
         - name: linkding
-          image: sissbruecker/linkding:1.42.0
+          image: sissbruecker/linkding:1.44.1
 
           # these envs are managed by CloudNativePG
           env:
